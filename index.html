@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pago de nomina</title>
+</head>
+
+<body>
+    
+    <div id="contenedor">
+        
+         <form id="form" onsubmit="functionSubmit(event)">
+             <h1>Pago de nomina</h1>
+
+             <div>
+                 <label>Nombre del empleado</label>
+                 <input id="inputName" type="text" placeholder="Enter name" required>
+             </div>
+
+             <div>
+                <label>Apellido del empleado</label>
+                <input id="inputLastName" type="text" placeholder="Enter last name" required>
+            </div>
+            <div>
+                <label>Email del empleado</label>
+                <input id="inputemail" type="text" placeholder="Enter email" required>
+            </div>
+
+            <div>
+                <label>Telefono del empleado</label>
+                <input id="inputtelefono" type="number" placeholder="Enter phone" required>
+            </div>
+           
+            <div>
+                <label> Numero de horas trabajadas</label>
+                <input id="inputhorastrabajadas" type="number" placeholder="Enter horas trabajada" required>
+            </div>
+
+            <div>
+                <label>Valor de la hora ordinaria </label>
+                <input id="inputvalorordinaria" type="number" placeholder="Enter valor de hora ordinarias" required>
+            </div>
+
+            <div>
+                <label>Numero de horas extras </label>
+                <input id="inputhorasextras" type="number" placeholder="Enter horas extras" required>
+            </div>
+            <div>
+                <label>Valor de horas Extras </label>
+                <input id="inputvalorextras" type="number" placeholder="Enter valor de hora extras" required>
+            </div>
+            <div>
+                <label>Numero de cuenta  </label>
+                <input id="inputnumerodecuenta" type="number" placeholder="Enter numero de cuenta" required>
+            </div>
+
+            <div>
+                <label>Consignar</label>
+                <input id="inputConsignar" type="number" readonly>
+            </div>
+
+            <button id="buttonSubmit" type="submit" onclick="getConsignar()">Submit</button>
+
+         </form>
+
+
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
